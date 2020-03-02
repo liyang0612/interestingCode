@@ -1,4 +1,4 @@
-# interestingCode
+# interestingCode [![Build Status](https://travis-ci.org/yangsenlin/snsdemo.svg?branch=master)](https://travis-ci.org/liyang0612/interestingCode.svg?branch=master)
 > 记录一些有趣的代码
 
 ------------
