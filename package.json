@@ -1,0 +1,19 @@
+{
+  "name": "interestingcode",
+  "version": "1.0.0",
+  "description": "> 记录一些有趣的代码",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liyang0612/interestingCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liyang0612/interestingCode/issues"
+  },
+  "homepage": "https://github.com/liyang0612/interestingCode#readme"
+}
