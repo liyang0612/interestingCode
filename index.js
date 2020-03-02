@@ -13,9 +13,5 @@ exports.renameObjectKey = function(obj, mapObj) {
 
   const reg = new RegExp(Object.keys(mapObj).join('|'), 'gi')
 
-  return JSON.parse(
-    JSON.stringify(obj).replace(
-      reg,
-      matched => mapObj[matched])
-      )
+  return JSON.parse(JSON.stringify(obj).replace(reg, matched => mapObj[matched]))
 }
