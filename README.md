@@ -27,3 +27,11 @@
   const reg = new RegExp(Object.keys(MAP).join('|'), 'gi')
   return JSON.parse(JSON.stringify(productInfo).replace(reg, matched => MAP[matched]))
 ```
+
+3. 过滤数组的 "假" 值
+
+```javascript
+  const arr = [1, 2, false, null, 3, undefined]
+  arr.filter(Boolean)
+  // 输出 [1, 2, 3]
+```

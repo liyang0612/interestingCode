@@ -4,7 +4,7 @@
   "description": "> 记录一些有趣的代码",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/liyang0612/interestingCode/issues"
   },
-  "homepage": "https://github.com/liyang0612/interestingCode#readme"
+  "homepage": "https://github.com/liyang0612/interestingCode#readme",
+  "dependencies": {
+    "jest": "^25.1.0"
+  }
 }
