@@ -1,4 +1,4 @@
-# interestingCode [![Build Status](https://travis-ci.org/yangsenlin/snsdemo.svg?branch=master)](https://travis-ci.org/liyang0612/interestingCode.svg?branch=master)
+# interestingCode [![Build Status](https://travis-ci.org/yangsenlin/snsdemo.svg?branch=master)](https://travis-ci.org/liyang0612/interestingCode)
 > 记录一些有趣的代码
 
 ------------
@@ -34,4 +34,11 @@
   const arr = [1, 2, false, null, 3, undefined]
   arr.filter(Boolean)
   // 输出 [1, 2, 3]
+```
+
+4. reduce 实现去重
+
+```javascript
+  const arr = [1, 2, 3, 5, 5, 's', 's']
+  arr.reduce((newArr, val) => newArr.includes(val) ? newArr : [...newArr, val], [])
 ```
