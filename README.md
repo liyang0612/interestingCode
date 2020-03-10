@@ -42,3 +42,13 @@
   const arr = [1, 2, 3, 5, 5, 's', 's']
   arr.reduce((newArr, val) => newArr.includes(val) ? newArr : [...newArr, val], [])
 ```
+
+4. 千位分隔符
+
+```javascript
+  // 方法一
+  let num = 999999900.345
+  num.toLocaleString();
+
+  '999999900.345'.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+```
