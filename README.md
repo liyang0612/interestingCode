@@ -43,12 +43,20 @@
   arr.reduce((newArr, val) => newArr.includes(val) ? newArr : [...newArr, val], [])
 ```
 
-4. 千位分隔符
+5. 千位分隔符
 
 ```javascript
   // 方法一
   let num = 999999900.345
   num.toLocaleString();
-
+  // 方法二
   '999999900.345'.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+```
+
+6. 精确获取数据类型
+``` javascript
+  var data = function() {}
+  Object.prototype.toString.call(data).slice(8, -1)
+
+  // 输入 'Function'
 ```

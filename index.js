@@ -21,3 +21,13 @@ exports.renameObjectKey = function(obj, mapObj) {
 exports.reduceUniq = (arr) => {
   return arr.reduce((newArr, val) => newArr.includes(val) ? newArr : [...newArr, val], [])
 }
+
+// 千位分隔
+exports.stringSplit = (str) => {
+  return str.replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+}
+
+// 获取数据类型
+exports.getType = (data) => {
+  return Object.prototype.toString.call(data).slice(8, -1)
+}
